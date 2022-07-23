@@ -1,8 +1,12 @@
 let answer = parseInt(prompt("Please enter a number"));
 
 for (let i=1; i<=answer; i++) {
-    if (i % 3===0){
-        console.log("Fizz")
+    if (i % 3 === 0){
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
     }
-    console.log(i);
+    else {
+        console.log(i);
+    }
 }
