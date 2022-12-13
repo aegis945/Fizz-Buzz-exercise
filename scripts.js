@@ -1,6 +1,10 @@
-let answer = parseInt(prompt("Please enter a number"));
+var answer = prompt("Please enter a number");
+        while (isNaN(answer)) {
+            console.log(answer + " is not a number");
+            var answer = prompt("Only numbers are allowed. Please enter a number");
+        }
 
-for (let i=1; i<=answer; i++) {
+for (let i=1; i <= parseInt(answer); i++) {
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");
     } else if (i % 3 === 0) {
